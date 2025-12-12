@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Lock, AlertTriangle, Wallet } from 'lucide-react';
+import { Lock } from 'lucide-react';
 import { Button, Input } from '@/components/ui';
 import { useWallet } from '@/hooks/useWallet';
 

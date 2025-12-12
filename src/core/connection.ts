@@ -4,10 +4,8 @@ import {
   Transaction,
   VersionedTransaction,
   SendOptions,
-  Commitment,
   LAMPORTS_PER_SOL,
   SystemProgram,
-  TransactionInstruction,
 } from '@solana/web3.js';
 import {
   getAssociatedTokenAddress,

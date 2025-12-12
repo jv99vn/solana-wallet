@@ -4,11 +4,8 @@ import {
   ChevronDown,
   Copy,
   Check,
-  Settings,
   Plus,
   LogOut,
-  Wallet,
-  Globe,
 } from 'lucide-react';
 import { Avatar } from '@/components/ui';
 import { useWallet } from '@/hooks/useWallet';

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Coins, ImageOff } from 'lucide-react';
+import { Coins } from 'lucide-react';
 import { useWallet } from '@/hooks/useWallet';
 import { shortenAddress } from '@/core/crypto';
 import type { TokenBalance } from '@/types';

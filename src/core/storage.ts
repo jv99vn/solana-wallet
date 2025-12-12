@@ -1,5 +1,4 @@
-import type { ConnectedSite, WalletState, NetworkConfig } from '@/types';
-import { NETWORKS } from './connection';
+import type { ConnectedSite } from '@/types';
 
 const STORAGE_KEYS = {
   CONNECTED_SITES: 'sol_wallet_connected_sites',

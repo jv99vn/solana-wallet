@@ -1,5 +1,3 @@
-import { PublicKey, Transaction, VersionedTransaction } from '@solana/web3.js';
-
 export interface WalletAccount {
   publicKey: string;
   name: string;
@@ -31,7 +29,7 @@ export interface NetworkConfig {
   cluster: 'mainnet-beta' | 'testnet' | 'devnet' | 'localnet';
 }
 
-export interface Transaction {
+export interface TransactionRecord {
   signature: string;
   timestamp: number;
   type: 'send' | 'receive' | 'swap' | 'unknown';
@@ -88,19 +86,6 @@ export interface WalletResponse {
 export interface SignMessageRequest {
   message: Uint8Array;
   display?: 'hex' | 'utf8';
-}
-
-export interface SignTransactionRequest {
-  transaction: Transaction | VersionedTransaction;
-}
-
-export interface SendTransactionRequest {
-  transaction: Transaction | VersionedTransaction;
-  options?: {
-    skipPreflight?: boolean;
-    preflightCommitment?: string;
-    maxRetries?: number;
-  };
 }
 
 export interface PendingRequest {

@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
   Settings,
   Shield,
   Globe,
-  Bell,
   Trash2,
   Key,
   ChevronRight,
@@ -16,7 +15,6 @@ import {
 import { Button, Input, Card, CardContent, Modal } from '@/components/ui';
 import { useWallet } from '@/hooks/useWallet';
 import { NETWORKS } from '@/core/connection';
-import { shortenAddress } from '@/core/crypto';
 
 export function App() {
   const {

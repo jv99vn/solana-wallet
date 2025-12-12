@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Eye, EyeOff, Copy, Check, AlertTriangle, Shield } from 'lucide-react';
+import { ArrowLeft, Eye, Copy, Check, AlertTriangle, Shield } from 'lucide-react';
 import { Button, Input } from '@/components/ui';
 import { useWallet } from '@/hooks/useWallet';
 
