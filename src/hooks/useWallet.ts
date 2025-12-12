@@ -1,7 +1,6 @@
-import { useCallback, useEffect } from 'react';
+import { useCallback } from 'react';
 import { useWalletStore, sendMessage } from './useWalletStore';
 import type { WalletAccount, NetworkConfig } from '@/types';
-import type { PendingRequest } from '@/core/storage';
 
 export function useWallet() {
   const store = useWalletStore();

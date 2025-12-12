@@ -43,7 +43,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 async function handleInternalMessage(
   message: any,
-  sender: chrome.runtime.MessageSender
+  _sender: chrome.runtime.MessageSender
 ): Promise<any> {
   await resetLockTimer();
 
@@ -439,7 +439,7 @@ function broadcastToTabs(message: any): void {
 }
 
 // Listen for tab updates to update connected site info
-chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
+chrome.tabs.onUpdated.addListener(async (_tabId, changeInfo, tab) => {
   if (changeInfo.status === 'complete' && tab.url) {
     try {
       const origin = new URL(tab.url).origin;

@@ -11,7 +11,7 @@ interface BalanceProps {
 }
 
 export function Balance({ onSend, onReceive }: BalanceProps) {
-  const { currentAccount, balance, network, refreshBalance, requestAirdrop, isLoading } =
+  const { currentAccount, balance, network, refreshBalance, requestAirdrop } =
     useWallet();
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [isAirdropping, setIsAirdropping] = useState(false);

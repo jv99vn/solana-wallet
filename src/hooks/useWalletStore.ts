@@ -67,7 +67,7 @@ export const useWalletStore = create<WalletStore>((set) => ({
 }));
 
 // Helper hook for sending messages to background script
-export function sendMessage<T = unknown>(type: string, payload?: unknown): Promise<T> {
+export function sendMessage<T = unknown>(type: string, payload?: Record<string, unknown>): Promise<T> {
   return new Promise((resolve, reject) => {
     chrome.runtime.sendMessage({ type, ...payload }, (response) => {
       if (chrome.runtime.lastError) {

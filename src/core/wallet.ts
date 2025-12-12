@@ -1,4 +1,4 @@
-import { Keypair, PublicKey, Transaction, VersionedTransaction } from '@solana/web3.js';
+import { Keypair, Transaction, VersionedTransaction } from '@solana/web3.js';
 import {
   generateMnemonic,
   validateMnemonic,
